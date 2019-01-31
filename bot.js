@@ -9,7 +9,7 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'p')) {
+  if (message.content.startsWith(adminprefix + 'g')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
